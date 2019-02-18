@@ -1219,7 +1219,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var AuthenticationService = /** @class */ (function () {
     function AuthenticationService(http) {
         this.http = http;
-        this.apiUri = 'http://localhost:3000';
+        this.apiUri = 'https://mobileapp-qbank.herokuapp.com';
         this.currentUserSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](JSON.parse(localStorage.getItem('currentUser')));
         this.currentUser = this.currentUserSubject.asObservable();
     }

@@ -169,7 +169,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var QuestionService = /** @class */ (function () {
     function QuestionService(http) {
         this.http = http;
-        this.uri = 'http://localhost:3000';
+        this.uri = 'https://mobileapp-qbank.herokuapp.com';
     }
     QuestionService.prototype.addQuestion = function (data) {
         return this.http.post(this.uri + "/api/question/add", data);
@@ -219,7 +219,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var UserService = /** @class */ (function () {
     function UserService(http) {
         this.http = http;
-        this.uri = 'http://localhost:3000';
+        this.uri = 'https://mobileapp-qbank.herokuapp.com';
     }
     UserService.prototype.registerUser = function (data) {
         return this.http.post(this.uri + "/api/user/add", data);
