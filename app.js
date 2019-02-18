@@ -10,7 +10,7 @@ var mongoose = require('mongoose');
 
 var app = express();
 
-mongoose.connect('mongodb://127.0.0.1:27017/qBank');
+mongoose.connect('mongodb://malith:malithk123@ds341825.mlab.com:41825/heroku_t3kjnpp2');
 
 const connection=mongoose.connection;
 
