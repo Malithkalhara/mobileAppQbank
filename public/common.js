@@ -143,6 +143,53 @@ var GrdFilterPipe = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/pipe.module.ts":
+/*!********************************!*\
+  !*** ./src/app/pipe.module.ts ***!
+  \********************************/
+/*! exports provided: PipeModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PipeModule", function() { return PipeModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _grd_filter_pipe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./grd-filter.pipe */ "./src/app/grd-filter.pipe.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var PipeModule = /** @class */ (function () {
+    function PipeModule() {
+    }
+    PipeModule_1 = PipeModule;
+    PipeModule.forRoot = function () {
+        return {
+            ngModule: PipeModule_1,
+            providers: [],
+        };
+    };
+    var PipeModule_1;
+    PipeModule = PipeModule_1 = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [],
+            declarations: [_grd_filter_pipe__WEBPACK_IMPORTED_MODULE_1__["GrdFilterPipe"]],
+            exports: [
+                _grd_filter_pipe__WEBPACK_IMPORTED_MODULE_1__["GrdFilterPipe"]
+            ]
+        })
+    ], PipeModule);
+    return PipeModule;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/services/question.service.ts":
 /*!**********************************************!*\
   !*** ./src/app/services/question.service.ts ***!

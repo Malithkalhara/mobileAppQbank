@@ -16,7 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var _questions_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./questions.page */ "./src/app/questions/questions.page.ts");
-/* harmony import */ var _grd_filter_pipe__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../grd-filter.pipe */ "./src/app/grd-filter.pipe.ts");
+/* harmony import */ var _pipe_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../pipe.module */ "./src/app/pipe.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -29,6 +29,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+//import { GrdFilterPipe } from '../grd-filter.pipe';
 
 var routes = [
     {
@@ -45,9 +46,11 @@ var QuestionsPageModule = /** @class */ (function () {
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
                 _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
+                _pipe_module__WEBPACK_IMPORTED_MODULE_6__["PipeModule"].forRoot(),
                 _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(routes)
             ],
-            declarations: [_questions_page__WEBPACK_IMPORTED_MODULE_5__["QuestionsPage"], _grd_filter_pipe__WEBPACK_IMPORTED_MODULE_6__["GrdFilterPipe"]]
+            declarations: [_questions_page__WEBPACK_IMPORTED_MODULE_5__["QuestionsPage"]],
+            exports: []
         })
     ], QuestionsPageModule);
     return QuestionsPageModule;

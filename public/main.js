@@ -961,7 +961,7 @@ var routes = [
     { path: 'questions', loadChildren: './questions/questions.module#QuestionsPageModule', canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_2__["AuthGuard"]] },
     { path: 'users', loadChildren: './users/users.module#UsersPageModule' },
     { path: 'userprofile', loadChildren: './userprofile/userprofile.module#UserprofilePageModule' },
-    { path: 'questionsadmin', loadChildren: './questionsadmin/questionsadmin.module#QuestionsadminPageModule' },
+    { path: 'questionsadmin', loadChildren: './questionsadmin/questionsadmin.module#QuestionsadminPageModule' }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -1104,6 +1104,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+//import { QuestionsadminPageModule } from './questionsadmin/questionsadmin.module';
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
